@@ -8,7 +8,10 @@ class Cargo:
 
 class BaseRobot:
     def __init__(
-        self, name: str, weight: int, coords: List[int] = None
+        self,
+        name: str,
+        weight: int,
+        coords: List[int] = None
     ) -> None:
         self.name = name
         self.weight = weight
@@ -32,7 +35,10 @@ class BaseRobot:
 
 class FlyingRobot(BaseRobot):
     def __init__(
-        self, name: str, weight: int, coords: List[int] = None
+        self,
+        name: str,
+        weight: int,
+        coords: List[int] = None
     ) -> None:
         coords = coords or [0, 0, 0]
         super().__init__(name, weight, coords)
